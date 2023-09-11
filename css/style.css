@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.users-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.users-form form input{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.users-form form input[type="text"],
+.users-form form input[type="password"],
+.users-form form input[type="email"]{
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius:4px;
+    outline:none;
+    transition: .3s;
+}
+
+.users-form form input[type="text"]:focus,
+.users-form form input[type="password"]:focus,
+.users-form form input[type="email"]:focus{
+    border-color: rgb(172, 184, 195);
+    box-shadow: 0 0 6px 0 rgb(166, 172, 178);
+}
+
+.users-form form input[type="submit"]{
+    border: none;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    }
+
+    .users-form form input[type="submit"]:hover{
+        background-color: green;
+        color: white;
+    }
+
+
+    table {
+        width: 50%;
+        position: absolute ;
+        left: 25%;
+        
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #000000;
+    }
+    
+    tbody tr:nth-child(even) {
+        background-color: #f0f6eb;
+    }
+    
+    tbody tr:hover {
+        background-color: #ffffff;
+    }
+    
+    thead th {
+        background-color: green;
+        color: white;
+    }
+
+    .users-table--edit{
+        background: green;
+        padding: 0px;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .users-table--delete{
+        background: #e40606;
+        padding: 6px;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal-body{
+        width: 33%;
+        
+
+    }
+
+    .boton-servicios {
+        position:absolute;
+        top:60%;
+        left:53%;
+        display: inline-block;
+        padding: 5px 5px;
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+    
+    
